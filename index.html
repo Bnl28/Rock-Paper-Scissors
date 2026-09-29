@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game">
+      <h1>Rock &bull; Paper &bull; Scissors</h1>
+
+      <section class="scoreboard">
+        <div class="score">
+          <span class="label">You</span>
+          <span id="player-score">0</span>
+        </div>
+        <div class="score">
+          <span class="label">Computer</span>
+          <span id="cpu-score">0</span>
+        </div>
+      </section>
+
+      <p id="message" class="message">Make your move!</p>
+
+      <section class="choices">
+        <button class="choice" data-choice="rock" aria-label="Rock">✊</button>
+        <button class="choice" data-choice="paper" aria-label="Paper">✋</button>
+        <button class="choice" data-choice="scissors" aria-label="Scissors">✌️</button>
+      </section>
+
+      <section class="round-result" id="round-result" hidden>
+        <div class="pick">
+          <span class="pick-label">You picked</span>
+          <span id="player-pick" class="pick-emoji"></span>
+        </div>
+        <div class="pick">
+          <span class="pick-label">Computer picked</span>
+          <span id="cpu-pick" class="pick-emoji"></span>
+        </div>
+      </section>
+
+      <button id="reset" class="reset">Reset Score</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

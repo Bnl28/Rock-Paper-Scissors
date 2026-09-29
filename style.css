@@ -1,0 +1,142 @@
+:root {
+  --bg: #0f1424;
+  --card: #1b2340;
+  --accent: #4f9dff;
+  --win: #2ecc71;
+  --lose: #e74c3c;
+  --draw: #f1c40f;
+  --text: #f4f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.game {
+  width: min(90vw, 480px);
+  background: var(--card);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.score .label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.score span:last-child {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.message {
+  min-height: 24px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.choice {
+  font-size: 2.2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.choice:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.choice:active {
+  transform: translateY(0);
+}
+
+.round-result {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.round-result .pick {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pick-label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.pick-emoji {
+  font-size: 2rem;
+}
+
+.reset {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--text);
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.reset:hover {
+  border-color: var(--accent);
+}
+
+.message.win {
+  color: var(--win);
+}
+
+.message.lose {
+  color: var(--lose);
+}
+
+.message.draw {
+  color: var(--draw);
+}
