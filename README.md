@@ -2,7 +2,7 @@
 
 A simple browser-based Rock, Paper, Scissors game where you play against the computer.
 
-**🎮 Live Demo:** [bnl28.github.io/Rock-Paper-Scissors](https://bnl28.github.io/Rock-Paper-Scissors/)
+**🎮 Live Demo:** https://rock-paper-scissors-neon-one.vercel.app/
 
 ## How to play
 
