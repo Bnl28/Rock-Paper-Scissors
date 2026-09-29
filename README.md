@@ -2,15 +2,26 @@
 
 A simple browser-based Rock, Paper, Scissors game where you play against the computer.
 
+**🎮 Live Demo:** [bnl28.github.io/Rock-Paper-Scissors](https://bnl28.github.io/Rock-Paper-Scissors/)
+
 ## How to play
 
-Open `index.html` in your browser, then click Rock, Paper, or Scissors to play a round against the computer. The scoreboard tracks wins for both sides, and you can reset it at any time.
+Open `index.html` in your browser (or use the live demo link above), then click Rock, Paper, or Scissors — or press the `R`, `P`, or `S` keys — to play a round against the computer.
+
+## Features
+
+- Score tracking for you vs. the computer, saved automatically between visits
+- Win streak indicator
+- Recent rounds history (last 5 results)
+- Keyboard shortcuts (`R` / `P` / `S`)
+- Reset button to start a fresh match
 
 ## Tech
 
 - HTML
 - CSS
 - Vanilla JavaScript
+- Deployed automatically to GitHub Pages via GitHub Actions
 
 ## Author
 
